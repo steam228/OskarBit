@@ -104,7 +104,7 @@ function draw() {
 // Function to parse incoming serial message
 function parseSerialMessage(message) {
   // Check if message starts with 'm' (accelerometer data)
-  if (message.startsWith("m")) {
+  if (message.startsWith("m1")) {
     // Extract x, y, z values using regex
     let xMatch = message.match(/x=([^,\s]+)/);
     let yMatch = message.match(/y=([^,\s]+)/);
